@@ -1,0 +1,149 @@
+/*####################################
+#
+#	Autor: Hector Sevilla
+#	Descripcion: Hoja de estilos para 
+#				 la plantilla web de 
+				 Canet
+#	Fecha: 01/04/2015
+#
+#	1- Cabecera
+#	2- Menu
+#	3- Slider
+#	4- Seccion Principal
+#	5- Reviews
+#	6- mapa
+#	7- Redes Sociales
+#	8- Footer
+#	9- Mediaquery
+#####################################
+*/
+@import 'fonts.styl'
+@import 'normalize.styl'
+@import 'nib'
+
+
+//Colores
+verde-oscuro= #17a8b5
+rojo= #e82e2f
+
+html
+	font-size: 14px
+	
+[class^="icon-"] 
+[class*=" icon-"]
+	font-family 'icomoon'
+	speak none
+	font-style normal
+	font-weight normal
+	font-variant normal
+	text-transform none
+	line-height 1
+	-webkit-font-smoothing antialiased
+	-moz-osx-font-smoothing grayscale
+
+
+
+
+//OOCSS
+alinear()
+	display inline-block
+	vertical-align top
+rem(pixel)
+	(pixel/14)rem
+
+.boton
+	max-width rem(265)
+	height rem(60)
+	background-color rojo
+	color white
+	
+fuentePrincipal(size)
+	font-family "Roboto"
+	font-size rem(size)
+
+fuenteTexto(size)
+	font-family "Open Sans"
+	font-size rem(size)
+a
+	text-decoration none
+img
+	max-width 100%
+	font-size 0
+ul
+p
+figure
+	margin 0
+	padding 0
+ul
+	list-style none
+h1
+	fuentePrincipal(60)
+	color dark-green
+	text-transform uppercase
+h2
+	fuentePrincipal(45)
+	text-shadow 3px 4px 5px rgba(10,11,2,.6)
+	color white
+	text-transform uppercase
+	font-weight 300
+h3
+	fuentePrincipal(30)
+	text-shadow 3px 4px 5px rgba(10,11,2,.6)
+	color verde-oscuro
+	font-weight 300
+input[type="text"]
+input[type="mail"]
+	width rem(265)
+	height rem(46)
+	background-color #e8e8e8
+	box-shadow inset 3px 4px 2px rgba(10,11,2,.1)
+textarea
+	border 1px solid #d0dee7
+	box-sizing border-box
+	padding-left: .7rem
+	width 100%
+body
+	fuenteTexto(14)
+	font-weight: 300
+	background-color: white
+	line-height: 1.5
+icon(icono)
+	content "\"+icono
+	font-family fontawesome
+	padding-right .7rem
+	
+parallax(imagen)
+	background-attachment fixed
+	background-image url(../img/imagen)
+	background-position top center
+	background-repeat no-repeat
+	background-size cover
+	//height 70vh
+	position relative
+	//text-indent -9999px
+
+.alinear
+	alinear()
+
+header
+	border-bottom rem(40) solid verde-oscuro
+	figure
+		text-align center
+		padding 2rem 0
+.imagenes
+	figure
+		font-size 0
+
+
+
+footer
+	text-align: center
+	padding 1.5rem 0
+	color white
+	a
+		color white
+// CURSOS Y ASESORIA FIN
+
+/*@media screen and (min-width:768px)
+	
+@media screen and (min-width:1000px) */

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: icomoon;
+  font-weight: normal;
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'),url("../fonts/icomoon.woff") format('woff'),url("../fonts/icomoon.ttf") format('truetype'),url("../fonts/icomoon.svg#icomoon") format('svg');
+}
+
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+figcaption,
+figure,
+footer,
+header {
+  display: block;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+figcaption,
+figure,
+footer,
+header {
+  display: block;
+}
+
+a {
+  background: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  font-size: 0;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-size: 3.214285714285714rem;
+  text-shadow: 3px 4px 5px rgba(10,11,2,0.6);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+body {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  font-weight: 300;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+header {
+  border-bottom: 2.857142857142857rem solid #17a8b5;
+}
+
+header figure {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.imagenes figure {
+  font-size: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+}
