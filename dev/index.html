@@ -11,7 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <!-- FONTS -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
         
@@ -19,7 +18,7 @@
     </head>
     <body>
       <header>
-      	<figure><img src="img/logotipo.png" alt=""></figure>
+      	<figure><a href="/"><img src="img/logotipo.png" alt=""></a></figure>
       </header>
        
 		
@@ -65,10 +64,10 @@
              <img src="img/speaking-english.jpg" height="366" width="359" alt="">
            </div>
            <div class="alinear formulario">
-             <form action="">
-               <input type="text" placeholder="Nombre" required>
-               <input type="text" placeholder="Telefono" required>
-               <input type="mail" placeholder="Email" required>
+             <form action="mail/correo.php" method="POST">
+               <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+               <input type="text" name="telefono" id="telefono" placeholder="Telefono" required>
+               <input type="mail" name="correo" id="correo" placeholder="Email" required>
                <input type="submit" value="Concertemos la" class="boton">
              </form>
            </div>
@@ -147,7 +146,9 @@ Managua, Nicaragua
         <footer class="medium">
           <div class="wrap">
             <figure>
+              <a href="/">
               <img src="img/logotipoFooter.png" height="31" width="82" alt="">
+              </a>
               <figcaption>
                 &copy; Canet 2015
               </figcaption>

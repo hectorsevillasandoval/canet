@@ -63,7 +63,7 @@ gulp.task('watch', function() {
 gulp.task('uncss', function() {
     // content
     gulp.src('../public/css/main.css')
-        .pipe(uncss({html: ['index.html']}))
+        .pipe(uncss({html: ['index.html','thankyou.html','error.html']}))
         /*.pipe(compressor())*/
         .pipe(gulp.dest('../public/uncss/'));
 });
