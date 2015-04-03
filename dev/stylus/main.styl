@@ -51,19 +51,20 @@ alinear()
 rem(pixel)
 	(pixel/14)rem
 
+fuentePrincipal(size)
+	font-family "Roboto"
+	font-size rem(size)
 .boton
 	max-width rem(265)
 	height rem(60)
 	background-color rojo
+	width 100%
 	color white
+	border 0
+	margin 1rem auto
+	text-transform: uppercase
+	fuentePrincipal(24)
 	
-fuentePrincipal(size)
-	font-family "Roboto"
-	font-size rem(size)
-
-fuenteTexto(size)
-	font-family "Open Sans"
-	font-size rem(size)
 a
 	text-decoration none
 img
@@ -88,25 +89,35 @@ h2
 	font-weight 300
 h3
 	fuentePrincipal(30)
-	text-shadow 3px 4px 5px rgba(10,11,2,.6)
 	color verde-oscuro
 	font-weight 300
+	text-transform: uppercase
+	text-align: center
 input[type="text"]
 input[type="mail"]
 	width rem(265)
 	height rem(46)
+	border 0
 	background-color #e8e8e8
 	box-shadow inset 3px 4px 2px rgba(10,11,2,.1)
+	fuentePrincipal(18)
+	padding-left 1.5rem
+	box-sizing: border-box
+	margin-bottom: 1.5rem
+	display block
 textarea
 	border 1px solid #d0dee7
 	box-sizing border-box
 	padding-left: .7rem
 	width 100%
+p
+	fuentePrincipal(18)
 body
-	fuenteTexto(14)
+	fuentePrincipal(14)
 	font-weight: 300
 	background-color: white
 	line-height: 1.5
+	color #787878
 icon(icono)
 	content "\"+icono
 	font-family fontawesome
@@ -124,6 +135,13 @@ parallax(imagen)
 
 .alinear
 	alinear()
+centradoVertical()
+	position absolute
+	top 0
+	left 0
+	bottom 0
+	right 0
+	margin auto
 
 header
 	border-bottom rem(40) solid verde-oscuro
@@ -133,17 +151,122 @@ header
 .imagenes
 	figure
 		font-size 0
+		position relative
+		alinear()
+		figcaption
+			centradoVertical()
+			text-align center
+			h2
+				centradoVertical()
+				padding-top: 25%
+		/*&:first-child
+			figcaption
+				left 3%*/
 
-
+section
+	padding-top rem(50)
+	padding-bottom rem(50)
+	&.form
+		border-bottom: 6px solid verde-oscuro
+		> .wrap
+			text-align: center
+			> div
+				box-sizing: border-box
+				&:nth-child(2)
+				&:last-child
+					padding 1rem 2rem
+.iconos
+	text-align: center
+	.box
+		//width rem(260)
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 1.5rem
+section
+	&.clientes
+		background-color: #e2e2e2
+		li
+			text-align: center
+			margin-bottom: 1.5rem
 
 footer
+	background-color: verde-oscuro
 	text-align: center
-	padding 1.5rem 0
+	padding 1rem 0
 	color white
 	a
 		color white
 // CURSOS Y ASESORIA FIN
 
-/*@media screen and (min-width:768px)
-	
-@media screen and (min-width:1000px) */
+@media screen and (min-width:768px)
+	h3
+		font-size rem(36)
+	.imagenes
+		&.medium
+			figure
+				width 50%
+	.iconos
+		&.medium
+			.box
+				width 50%
+	.clientes
+		&.medium
+			li
+				alinear()
+				width 50%
+	footer
+		&.medium
+			.wrap
+				clearfix()
+				padding-left 1rem
+				padding-right: 1rem
+				figure
+					&:first-child
+						float left
+						position relative
+						figcaption
+							position absolute
+							top 5px
+							right -94px
+					&:last-child
+						float right
+						padding-top: .5rem
+@media screen and (min-width:1000px)
+	.wrap
+		max-width rem(1200)
+		margin-left: auto
+		margin-right: auto
+	.imagenes
+		&.large
+			figure
+				width rem(600)
+	.form
+		&.large
+			.wrap
+				> div
+					&:first-child
+						padding-right: 3rem
+					&:nth-child(2)
+						border-right 1px solid #d2d2d2
+						border-left: 1px solid #d2d2d2
+						padding-left 3rem
+						padding-right: 3rem
+					&:last-child
+						padding-left 3rem
+						p
+							text-align: left
+							padding-top: 3rem
+	.iconos
+		&.large
+			.box
+				width rem(260)
+	.clientes
+		&.large
+			text-align: center
+			li
+				width auto
+				&:nth-child(2)
+					margin-left 1.5rem
+					margin-right: 1.5rem
+				&:nth-child(3)
+					margin-right: 1.5rem
